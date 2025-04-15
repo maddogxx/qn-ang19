@@ -1,9 +1,14 @@
 <div>
-    <h1>Testes com Angular</h1>
-    <ul>
-        <li><a routerLink="/objwin" >Objeto Window no Angular SSR</a></li>
-        <li><a routerLink="/popover" >Popover</a></li>
-    </ul>
+    <h1 class="text-3xl font-bold underline mb-4">
+      Testes com Angular
+    </h1>
+    @if(casos.length > 0) {
+      <ul>
+        @for(caso of casos; track $index) {
+          <li><a [routerLink]=caso.url class="hover:text-green-600">{{caso.texto}}</a></li>
+        }
+      </ul>
+    }
 </div>
 
 

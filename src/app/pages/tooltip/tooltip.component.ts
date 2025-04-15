@@ -10,7 +10,7 @@ import { PopoverComponent, PopoverTemplate  } from '@ngx-popovers/popover';
     PopoverComponent,
     PopoverTemplate],
   templateUrl: './tooltip.component.html',
-  styleUrl: './tooltip.component.scss'
+  styleUrl: './tooltip.component.css'
 })
 export class TooltipComponent {
 
