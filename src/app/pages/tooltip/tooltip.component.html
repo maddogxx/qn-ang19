@@ -1,0 +1,18 @@
+<div #solicitaDestaque>
+    <h2 class="subtitulo">
+        Solicitações em Destaque dos Meus Imóveis
+        <ngx-popover bindTo="solicitaDestaque" placement="right">
+            <ng-template ngx-popover-template>
+                Solicitações em andamento ou com notificações pendentes de ciência
+            </ng-template>
+
+            <span popoverOnHover="true" popoverCloseOnMouseOutside="true" style="cursor: pointer;">
+                <em class="fa fa-question-circle-o fa-lg"></em>
+            </span>
+            <ngx-arrow />
+        </ngx-popover>
+    </h2>
+    <span popoverOnHover="true" popoverCloseOnMouseOutside="true" style="cursor: pointer;">
+        <em class="fa fa-question-circle-o fa-lg"></em>
+    </span>
+</div>
